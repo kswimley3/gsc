@@ -7,34 +7,117 @@ path = Path(".") / "data"
 
 # create the main dictionary
 poke_dict = {}
-poke_dict['bulbasaur'] = {}
-poke_dict['charmander'] = {}
-poke_dict['squirtle'] = {}
 
-# create pokemon ids
-poke_dict['bulbasaur']['id'] = 1
-poke_dict['charmander']['id'] = 4
-poke_dict['squirtle']['id'] = 7
+# read in csv and create an array of the values
+file_p_names = open(path / 'names_pokemon.txt', 'r')
+pokemon_names = file_p_names.read().split(',')
+
+# initialize pokemon dictionary
+count = 0
+for name in pokemon_names:
+    count +=1
+    poke_dict[name.strip()] = {}
+    poke_dict[name.strip()]['id'] = count
+    poke_dict[name.strip()]['learnset'] = {}
+
 
 # CREATE LEARNSETS AND LEVELS
 
-# bulbasaur
-poke_dict['bulbasaur']['learnset'] = {}
-poke_dict['bulbasaur']['learnset']['Tackle'] = 1
-poke_dict['bulbasaur']['learnset']['Absorb'] = 1
+# Bulbasaur
+poke_dict['Bulbasaur']['learnset']['Tackle'] = 1
+poke_dict['Bulbasaur']['learnset']['Absorb'] = 1
 
-# charmander
-poke_dict['charmander']['learnset'] = {}
-poke_dict['charmander']['learnset']['Tackle'] = 1
-poke_dict['charmander']['learnset']['Ember'] = 1
+# Ivysaur
+poke_dict['Ivysaur']['learnset']['Tackle'] = 1
+poke_dict['Ivysaur']['learnset']['Absorb'] = 1
 
-# squirtle
-poke_dict['squirtle']['learnset'] = {}
-poke_dict['squirtle']['learnset']['Tackle'] = 1
-poke_dict['squirtle']['learnset']['Bubble'] = 1
+# Venusaur
+poke_dict['Venusaur']['learnset']['Tackle'] = 1
+poke_dict['Venusaur']['learnset']['Absorb'] = 1
+
+# Charmander
+poke_dict['Charmander']['learnset']['Scratch'] = 1
+poke_dict['Charmander']['learnset']['Ember'] = 1
+
+# Charmeleon
+poke_dict['Charmeleon']['learnset']['Scratch'] = 1
+poke_dict['Charmeleon']['learnset']['Ember'] = 1
+
+# Charizard
+poke_dict['Charizard']['learnset']['Scratch'] = 1
+poke_dict['Charizard']['learnset']['Ember'] = 1
+
+# Squirtle
+poke_dict['Squirtle']['learnset']['Tackle'] = 1
+poke_dict['Squirtle']['learnset']['Bubble'] = 1
+
+# Wartortle
+poke_dict['Wartortle']['learnset']['Tackle'] = 1
+poke_dict['Wartortle']['learnset']['Bubble'] = 1
+
+# Blastoise
+poke_dict['Blastoise']['learnset']['Tackle'] = 1
+poke_dict['Blastoise']['learnset']['Bubble'] = 1
+
+# Caterpie
+
+# Metapod
+
+# Butterfree
+
+# Weedle
+
+# Kakuna
+
+# Beedrill
+
+# Pidgey
+
+# Pidgeotto
+
+# Pidgeot
+
+# Rattata
+
+# Raticate
+
+# Spearow
+
+# Fearow
+
+# Ekans
+
+# Arbok
+
+# Pikachu
+
+# Raichu
+
+# Sandshew
+
+# Sandslash
+
+# NOTE UNIQUE CODES FOR NIDORAN!!
+
+# Nidoran♂
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['Tackle'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['Poison Sting'] = 1
+
+# Nidorina
+
+# Nidoqueen
+
+# Nidoran♀
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['Tackle'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['Poison Sting'] = 1
+
+# Nidorino
+
+# Nidoking
 
 
-# write the dictionary
+
+# # write the dictionary
 with open(path / 'poke_dict.json', 'w') as outfile:
     json.dump(poke_dict, outfile)
 
