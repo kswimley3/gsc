@@ -1,0 +1,35 @@
+name,type,power,acc,pp,notes
+Tackle,Normal,45,100,35,
+Absorb,Grass,40,95,30,half hp absorb
+Bubble,Water,30,95,30,spd down
+Ember,Fire,40,95,30,burn chance
+Thunder Shock,Electric,40,95,30,20% prz chance
+Rock Throw,Rock,40,90,30,30% flinch chance
+Magnitude,Ground,40,100,30,no effect
+Icy Wind,Ice,40,95,30,spd down
+Leech Life,Bug,35,95,30,half hp absorb
+Bite,Dark,40,95,30,20% flinch chance
+Twister,Dragon,40,100,30,no effect
+Karate Chop,Fighting,40,95,30,crit chance
+Peck,Flying,40,95,30,crit chance
+Lick,Ghost,40,95,30,10% prz chance
+Poison Sting,Poison,35,95,30,30% psn chance
+Confusion,Psychic,40,95,30,cnfs chance
+Metal Claw,Steel,35,100,30,atk up chance
+Take Down,Normal,80,90,20,recoil dmg
+Vine Whip,Grass,60,100,20,
+Water Gun,Water,50,100,20,
+Flame Wheel,Fire,50,100,20,burn chance
+Shock Wave,Electric,60,100,20,guaranteed hit
+Rock Tomb,Rock,60,95,20,spd down
+Bulldoze,Ground,60,100,20,
+Aurora Beam,Ice,60,100,20,20% atk down
+Fury Cutter,Bug,50,90,20,1.5x dmg for each success
+Crunch,Dark,50,100,20,20% chance def down
+Dragonbreath,Dragon,60,100,20,10% prz chance
+Submission,Fighting,70,100,20,recoil dmg
+Aerial Ace,Flying,60,100,20,guaranteed hit
+Shadow Ball,Ghost,60,100,20,20% chance spdef down
+Sludge,Poison,50,100,20,30% psn chance
+Psybeam,Psychic,60,100,20,
+Steel Wing,Steel,65,90,20,10% def up chance
