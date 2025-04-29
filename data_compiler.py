@@ -27,287 +27,449 @@ for name in pokemon_names:
 poke_dict['Bulbasaur']['evolution'] = {}
 poke_dict['Bulbasaur']['evolution']['EVOLVE_LEVEL'] = {}
 poke_dict['Bulbasaur']['evolution']['EVOLVE_LEVEL'][16] = "Ivysaur"
-poke_dict['Bulbasaur']['learnset']['Tackle'] = 1
-poke_dict['Bulbasaur']['learnset']['Leech Seed'] = 7
-poke_dict['Bulbasaur']['learnset']['Vine Whip'] = 10
-poke_dict['Bulbasaur']['learnset']['Poison Powder'] = 15
-poke_dict['Bulbasaur']['learnset']['Sleep Powder'] = 15
-poke_dict['Bulbasaur']['learnset']['Razor Leaf'] = 20
-poke_dict['Bulbasaur']['learnset']['Sweet Scent'] = 25
-poke_dict['Bulbasaur']['learnset']['Growth'] = 32
-poke_dict['Bulbasaur']['learnset']['Synthesis'] = 39
-poke_dict['Bulbasaur']['learnset']['Solarbeam'] = 46
+poke_dict['Bulbasaur']['learnset']['TACKLE'] = 1
+poke_dict['Bulbasaur']['learnset']['LEECH_SEED'] = 7
+poke_dict['Bulbasaur']['learnset']['VINE_WHIP'] = 10
+poke_dict['Bulbasaur']['learnset']['POISONPOWDER'] = 15
+poke_dict['Bulbasaur']['learnset']['SLEEP_POWDER'] = 15
+poke_dict['Bulbasaur']['learnset']['RAZOR_LEAF'] = 20
+poke_dict['Bulbasaur']['learnset']['SWEET_SCENT'] = 25
+poke_dict['Bulbasaur']['learnset']['GROWTH'] = 32
+poke_dict['Bulbasaur']['learnset']['SYNTHESIS'] = 39
+poke_dict['Bulbasaur']['learnset']['SOLARBEAM'] = 46
 
 # Ivysaur
 poke_dict['Ivysaur']['evolution'] = {}
 poke_dict['Ivysaur']['evolution']['EVOLVE_LEVEL'] = {}
 poke_dict['Ivysaur']['evolution']['EVOLVE_LEVEL'][32] = "Venusaur"
-poke_dict['Ivysaur']['learnset']['Tackle'] = 1
-poke_dict['Ivysaur']['learnset']['Leech Seed'] = 1
-poke_dict['Ivysaur']['learnset']['Vine Whip'] = 10
-poke_dict['Ivysaur']['learnset']['Poison Powder'] = 15
-poke_dict['Ivysaur']['learnset']['Sleep Powder'] = 15
-poke_dict['Ivysaur']['learnset']['Razor Leaf'] = 20
-poke_dict['Ivysaur']['learnset']['Sweet Scent'] = 25
-poke_dict['Ivysaur']['learnset']['Growth'] = 32
-poke_dict['Ivysaur']['learnset']['Synthesis'] = 39
-poke_dict['Ivysaur']['learnset']['Solarbeam'] = 46
+poke_dict['Ivysaur']['learnset']['TACKLE'] = 1
+poke_dict['Ivysaur']['learnset']['LEECH_SEED'] = 1
+poke_dict['Ivysaur']['learnset']['VINE_WHIP'] = 10
+poke_dict['Ivysaur']['learnset']['POISONPOWDER'] = 15
+poke_dict['Ivysaur']['learnset']['SLEEP_POWDER'] = 15
+poke_dict['Ivysaur']['learnset']['RAZOR_LEAF'] = 20
+poke_dict['Ivysaur']['learnset']['SWEET_SCENT'] = 25
+poke_dict['Ivysaur']['learnset']['GROWTH'] = 32
+poke_dict['Ivysaur']['learnset']['SYNTHESIS'] = 39
+poke_dict['Ivysaur']['learnset']['SOLARBEAM'] = 46
 
 # Venusaur
-poke_dict['Venusaur']['learnset']['Tackle'] = 1
-poke_dict['Venusaur']['learnset']['Absorb'] = 1
-poke_dict['Venusaur']['learnset']['Vine Whip'] = 10
-poke_dict['Venusaur']['learnset']['Poison Powder'] = 15
-poke_dict['Venusaur']['learnset']['Sleep Powder'] = 15
-poke_dict['Venusaur']['learnset']['Razor Leaf'] = 20
-poke_dict['Venusaur']['learnset']['Sweet Scent'] = 25
-poke_dict['Venusaur']['learnset']['Growth'] = 32
-poke_dict['Venusaur']['learnset']['Synthesis'] = 39
-poke_dict['Venusaur']['learnset']['Solarbeam'] = 46
+poke_dict['Venusaur']['learnset']['TACKLE'] = 1
+poke_dict['Venusaur']['learnset']['LEECH_SEED'] = 1
+poke_dict['Venusaur']['learnset']['VINE_WHIP'] = 10
+poke_dict['Venusaur']['learnset']['POISONPOWDER'] = 15
+poke_dict['Venusaur']['learnset']['SLEEP_POWDER'] = 15
+poke_dict['Venusaur']['learnset']['RAZOR_LEAF'] = 20
+poke_dict['Venusaur']['learnset']['SWEET_SCENT'] = 25
+poke_dict['Venusaur']['learnset']['GROWTH'] = 32
+poke_dict['Venusaur']['learnset']['SYNTHESIS'] = 39
+poke_dict['Venusaur']['learnset']['SOLARBEAM'] = 46
 
 # Charmander
 poke_dict['Charmander']['evolution'] = {}
 poke_dict['Charmander']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Charmander']['learnset']['Scratch'] = 1
-poke_dict['Charmander']['learnset']['Ember'] = 1
-poke_dict['Charmander']['learnset']['Smokescreen'] = 13
-poke_dict['Charmander']['learnset']['Rage'] = 19
-poke_dict['Charmander']['learnset']['Scary Face'] = 25
-poke_dict['Charmander']['learnset']['Flamethrower'] = 31
-poke_dict['Charmander']['learnset']['Slash'] = 37
-poke_dict['Charmander']['learnset']['Dragon Rage'] = 43
-poke_dict['Charmander']['learnset']['Fire Spin'] = 49
+poke_dict['Charmander']['learnset']['SCRATCH'] = 1
+poke_dict['Charmander']['learnset']['EMBER'] = 1
+poke_dict['Charmander']['learnset']['SMOKESCREEN'] = 13
+poke_dict['Charmander']['learnset']['RAGE'] = 19
+poke_dict['Charmander']['learnset']['SCARY_FACE'] = 25
+poke_dict['Charmander']['learnset']['FLAMETHROWER'] = 31
+poke_dict['Charmander']['learnset']['SLASH'] = 37
+poke_dict['Charmander']['learnset']['DRAGON_RAGE'] = 43
+poke_dict['Charmander']['learnset']['FIRE_SPIN'] = 49
 
 # Charmeleon
 poke_dict['Charmeleon']['evolution'] = {}
 poke_dict['Charmander']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Charmeleon']['learnset']['Scratch'] = 1
-poke_dict['Charmeleon']['learnset']['Ember'] = 1
-poke_dict['Charmeleon']['learnset']['Smokescreen'] = 13
-poke_dict['Charmeleon']['learnset']['Rage'] = 19
-poke_dict['Charmeleon']['learnset']['Scary Face'] = 25
-poke_dict['Charmeleon']['learnset']['Flamethrower'] = 31
-poke_dict['Charmeleon']['learnset']['Slash'] = 37
-poke_dict['Charmeleon']['learnset']['Dragon Rage'] = 43
-poke_dict['Charmeleon']['learnset']['Fire Spin'] = 49
+poke_dict['Charmeleon']['learnset']['SCRATCH'] = 1
+poke_dict['Charmeleon']['learnset']['EMBER'] = 1
+poke_dict['Charmeleon']['learnset']['SMOKESCREEN'] = 13
+poke_dict['Charmeleon']['learnset']['RAGE'] = 19
+poke_dict['Charmeleon']['learnset']['SCARY_FACE'] = 25
+poke_dict['Charmeleon']['learnset']['FLAMETHROWER'] = 31
+poke_dict['Charmeleon']['learnset']['SLASH'] = 37
+poke_dict['Charmeleon']['learnset']['DRAGON_RAGE'] = 43
+poke_dict['Charmeleon']['learnset']['FIRE_SPIN'] = 49
 
 # Charizard
-poke_dict['Charizard']['learnset']['Scratch'] = 1
-poke_dict['Charizard']['learnset']['Ember'] = 1
-poke_dict['Charizard']['learnset']['Smokescreen'] = 13
-poke_dict['Charizard']['learnset']['Rage'] = 19
-poke_dict['Charizard']['learnset']['Scary Face'] = 25
-poke_dict['Charizard']['learnset']['Flamethrower'] = 31
-poke_dict['Charizard']['learnset']['Wing Attack'] = 37
-poke_dict['Charizard']['learnset']['Slash'] = 37
-poke_dict['Charizard']['learnset']['Dragon Rage'] = 43
-poke_dict['Charizard']['learnset']['Fire Spin'] = 49
+poke_dict['Charizard']['learnset']['SCRATCH'] = 1
+poke_dict['Charizard']['learnset']['EMBER'] = 1
+poke_dict['Charizard']['learnset']['SMOKESCREEN'] = 13
+poke_dict['Charizard']['learnset']['RAGE'] = 19
+poke_dict['Charizard']['learnset']['SCARY_FACE'] = 25
+poke_dict['Charizard']['learnset']['FLAMETHROWER'] = 31
+poke_dict['Charizard']['learnset']['WING_ATTACK'] = 37
+poke_dict['Charizard']['learnset']['SLASH'] = 37
+poke_dict['Charizard']['learnset']['DRAGON_RAGE'] = 43
+poke_dict['Charizard']['learnset']['FIRE_SPIN'] = 49
 
 # Squirtle
 poke_dict['Squirtle']['evolution'] = {}
 poke_dict['Squirtle']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Squirtle']['learnset']['Tackle'] = 1
-poke_dict['Squirtle']['learnset']['Bubble'] = 1
-poke_dict['Squirtle']['learnset']['Tail Whip'] = 1
-poke_dict['Squirtle']['learnset']['Withdraw'] = 10
-poke_dict['Squirtle']['learnset']['Water Gun'] = 13
-poke_dict['Squirtle']['learnset']['Bite'] = 18
-poke_dict['Squirtle']['learnset']['Rapid Spin'] = 23
-poke_dict['Squirtle']['learnset']['Protect'] = 28
-poke_dict['Squirtle']['learnset']['Rain Dance'] = 33
-poke_dict['Squirtle']['learnset']['Skull Bash'] = 40
-poke_dict['Squirtle']['learnset']['Hydro Pump'] = 47
+poke_dict['Squirtle']['learnset']['TACKLE'] = 1
+poke_dict['Squirtle']['learnset']['BUBBLE'] = 1
+poke_dict['Squirtle']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Squirtle']['learnset']['WITHDRAW'] = 10
+poke_dict['Squirtle']['learnset']['WATER_GUN'] = 13
+poke_dict['Squirtle']['learnset']['BITE'] = 18
+poke_dict['Squirtle']['learnset']['RAPID_SPIN'] = 23
+poke_dict['Squirtle']['learnset']['PROTECT'] = 28
+poke_dict['Squirtle']['learnset']['RAIN_DANCE'] = 33
+poke_dict['Squirtle']['learnset']['SKULL_BASH'] = 40
+poke_dict['Squirtle']['learnset']['HYDRO_PUMP'] = 47
 
 # Wartortle
 poke_dict['Wartortle']['evolution'] = {}
 poke_dict['Wartortle']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Wartortle']['learnset']['Tackle'] = 1
-poke_dict['Wartortle']['learnset']['Bubble'] = 1
-poke_dict['Wartortle']['learnset']['Tail Whip'] = 1
-poke_dict['Wartortle']['learnset']['Withdraw'] = 10
-poke_dict['Wartortle']['learnset']['Water Gun'] = 13
-poke_dict['Wartortle']['learnset']['Bite'] = 18
-poke_dict['Wartortle']['learnset']['Rapid Spin'] = 23
-poke_dict['Wartortle']['learnset']['Protect'] = 28
-poke_dict['Wartortle']['learnset']['Rain Dance'] = 33
-poke_dict['Wartortle']['learnset']['Skull Bash'] = 40
-poke_dict['Wartortle']['learnset']['Hydro Pump'] = 47
+poke_dict['Wartortle']['learnset']['TACKLE'] = 1
+poke_dict['Wartortle']['learnset']['BUBBLE'] = 1
+poke_dict['Wartortle']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Wartortle']['learnset']['WITHDRAW'] = 10
+poke_dict['Wartortle']['learnset']['WATER_GUN'] = 13
+poke_dict['Wartortle']['learnset']['BITE'] = 18
+poke_dict['Wartortle']['learnset']['RAPID_SPIN'] = 23
+poke_dict['Wartortle']['learnset']['PROTECT'] = 28
+poke_dict['Wartortle']['learnset']['RAIN_DANCE'] = 33
+poke_dict['Wartortle']['learnset']['SKULL_BASH'] = 40
+poke_dict['Wartortle']['learnset']['HYDRO_PUMP'] = 47
 
 # Blastoise
-poke_dict['Blastoise']['learnset']['Tackle'] = 1
-poke_dict['Blastoise']['learnset']['Bubble'] = 1
-poke_dict['Blastoise']['learnset']['Tail Whip'] = 1
-poke_dict['Blastoise']['learnset']['Withdraw'] = 10
-poke_dict['Blastoise']['learnset']['Water Gun'] = 13
-poke_dict['Blastoise']['learnset']['Bite'] = 18
-poke_dict['Blastoise']['learnset']['Rapid Spin'] = 23
-poke_dict['Blastoise']['learnset']['Protect'] = 28
-poke_dict['Blastoise']['learnset']['Rain Dance'] = 33
-poke_dict['Blastoise']['learnset']['Skull Bash'] = 40
-poke_dict['Blastoise']['learnset']['Hydro Pump'] = 47
+poke_dict['Blastoise']['learnset']['TACKLE'] = 1
+poke_dict['Blastoise']['learnset']['BUBBLE'] = 1
+poke_dict['Blastoise']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Blastoise']['learnset']['WITHDRAW'] = 10
+poke_dict['Blastoise']['learnset']['WATER_GUN'] = 13
+poke_dict['Blastoise']['learnset']['BITE'] = 18
+poke_dict['Blastoise']['learnset']['RAPID_SPIN'] = 23
+poke_dict['Blastoise']['learnset']['PROTECT'] = 28
+poke_dict['Blastoise']['learnset']['RAIN_DANCE'] = 33
+poke_dict['Blastoise']['learnset']['SKULL_BASH'] = 40
+poke_dict['Blastoise']['learnset']['HYDRO_PUMP'] = 47
 
 # Caterpie
 poke_dict['Caterpie']['evolution'] = {}
 poke_dict['Caterpie']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Caterpie']['learnset']['Tackle'] = 1
-poke_dict['Caterpie']['learnset']['String Shot'] = 1
+poke_dict['Caterpie']['learnset']['TACKLE'] = 1
+poke_dict['Caterpie']['learnset']['STRING_SHOT'] = 1
 
 # Metapod
 poke_dict['Metapod']['evolution'] = {}
 poke_dict['Metapod']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Metapod']['learnset']['Tackle'] = 1
-poke_dict['Metapod']['learnset']['Harden'] = 7
+poke_dict['Metapod']['learnset']['TACKLE'] = 1
+poke_dict['Metapod']['learnset']['HARDEN'] = 7
 
 # Butterfree
-poke_dict['Butterfree']['learnset']['Confusion'] = 1
-poke_dict['Butterfree']['learnset']['Confusion'] = 10
-poke_dict['Butterfree']['learnset']['Poison Powder'] = 13
-poke_dict['Butterfree']['learnset']['Stun Spore'] = 14
-poke_dict['Butterfree']['learnset']['Sleep Powder'] = 15
-poke_dict['Butterfree']['learnset']['Supersonic'] = 18
-poke_dict['Butterfree']['learnset']['Whirlwind'] = 23
-poke_dict['Butterfree']['learnset']['Gust'] = 28
-poke_dict['Butterfree']['learnset']['Psybeam'] = 34
-poke_dict['Butterfree']['learnset']['Safeguard'] = 40
+poke_dict['Butterfree']['learnset']['CONFUSION'] = 1
+poke_dict['Butterfree']['learnset']['CONFUSION'] = 10
+poke_dict['Butterfree']['learnset']['POISONPOWDER'] = 13
+poke_dict['Butterfree']['learnset']['STUN_SPORE'] = 14
+poke_dict['Butterfree']['learnset']['SLEEP_POWDER'] = 15
+poke_dict['Butterfree']['learnset']['SUPERSONIC'] = 18
+poke_dict['Butterfree']['learnset']['WHIRLWIND'] = 23
+poke_dict['Butterfree']['learnset']['GUST'] = 28
+poke_dict['Butterfree']['learnset']['PSYBEAM'] = 34
+poke_dict['Butterfree']['learnset']['SAFEGUARD'] = 40
 
 # Weedle
 poke_dict['Weedle']['evolution'] = {}
 poke_dict['Weedle']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Weedle']['learnset']['Poison Sting'] = 1
-poke_dict['Weedle']['learnset']['String Shot'] = 1
+poke_dict['Weedle']['learnset']['POISON_STING'] = 1
+poke_dict['Weedle']['learnset']['STRING_SHOT'] = 1
 
 # Kakuna
 poke_dict['Kakuna']['evolution'] = {}
 poke_dict['Kakuna']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Kakuna']['learnset']['Poison Sting'] = 1
-poke_dict['Kakuna']['learnset']['Harden'] = 7
+poke_dict['Kakuna']['learnset']['POISON_STING'] = 1
+poke_dict['Kakuna']['learnset']['HARDEN'] = 7
 
 # Beedrill
 poke_dict['Beedrill']['learnset']['Leech Life'] = 1
-poke_dict['Beedrill']['learnset']['Fury Attack'] = 10
-poke_dict['Beedrill']['learnset']['Focus Energy'] = 1
-poke_dict['Beedrill']['learnset']['Twineedle'] = 1
-poke_dict['Beedrill']['learnset']['Rage'] = 1
-poke_dict['Beedrill']['learnset']['Pursuit'] = 1
-poke_dict['Beedrill']['learnset']['Pin Missile'] = 1
-poke_dict['Beedrill']['learnset']['Agility'] = 1
+poke_dict['Beedrill']['learnset']['FURY_ATTACK'] = 10
+poke_dict['Beedrill']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Beedrill']['learnset']['TWINEEDLE'] = 1
+poke_dict['Beedrill']['learnset']['RAGE'] = 1
+poke_dict['Beedrill']['learnset']['PURSUIT'] = 1
+poke_dict['Beedrill']['learnset']['PIN_MISSILE'] = 1
+poke_dict['Beedrill']['learnset']['AGILITY'] = 1
 
 # Pidgey
 poke_dict['Pidgey']['evolution'] = {}
 poke_dict['Pidgey']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Pidgey']['learnset']['Peck'] = 1
+poke_dict['Pidgey']['learnset']['PECK'] = 1
+poke_dict['Pidgey']['learnset']['TACKLE'] = 1
+poke_dict['Pidgey']['learnset']['SAND_ATTACK'] = 1
+poke_dict['Pidgey']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Pidgey']['learnset']['WHIRLWIND'] = 1
+poke_dict['Pidgey']['learnset']['WING_ATTACK'] = 1
+poke_dict['Pidgey']['learnset']['AGILITY'] = 1
+poke_dict['Pidgey']['learnset']['MIRROR_MOVE'] = 1
 
 # Pidgeotto
 poke_dict['Pidgeotto']['evolution'] = {}
 poke_dict['Pidgeotto']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Pidgeotto']['learnset']['Peck'] = 1
+poke_dict['Pidgeotto']['learnset']['PECK'] = 1
+poke_dict['Pidgeotto']['learnset']['TACKLE'] = 1
+poke_dict['Pidgeotto']['learnset']['SAND_ATTACK'] = 1
+poke_dict['Pidgeotto']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Pidgeotto']['learnset']['WHIRLWIND'] = 1
+poke_dict['Pidgeotto']['learnset']['WING_ATTACK'] = 1
+poke_dict['Pidgeotto']['learnset']['AGILITY'] = 1
+poke_dict['Pidgeotto']['learnset']['MIRROR_MOVE'] = 1
 
 # Pidgeot
-poke_dict['Pidgeot']['learnset']['Peck'] = 1
+poke_dict['Pidgeot']['learnset']['PECK'] = 1
+poke_dict['Pidgeot']['learnset']['TACKLE'] = 1
+poke_dict['Pidgeot']['learnset']['SAND_ATTACK'] = 1
+poke_dict['Pidgeot']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Pidgeot']['learnset']['WHIRLWIND'] = 1
+poke_dict['Pidgeot']['learnset']['WING_ATTACK'] = 1
+poke_dict['Pidgeot']['learnset']['AGILITY'] = 1
+poke_dict['Pidgeot']['learnset']['MIRROR_MOVE'] = 1
 
 # Rattata
 poke_dict['Rattata']['evolution'] = {}
 poke_dict['Rattata']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Rattata']['learnset']['Scratch'] = 1
+poke_dict['Rattata']['learnset']['SCRATCH'] = 1
+poke_dict['Rattata']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Rattata']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Rattata']['learnset']['HYPER_FANG'] = 1
+poke_dict['Rattata']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Rattata']['learnset']['PURSUIT'] = 1
+poke_dict['Rattata']['learnset']['SUPER_FANG'] = 1
 
 # Raticate
-poke_dict['Raticate']['learnset']['Scratch'] = 1
+poke_dict['Raticate']['learnset']['SCRATCH'] = 1
+poke_dict['Raticate']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Raticate']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Raticate']['learnset']['HYPER_FANG'] = 1
+poke_dict['Raticate']['learnset']['SCARY_FACE'] = 1
+poke_dict['Raticate']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Raticate']['learnset']['PURSUIT'] = 1
+poke_dict['Raticate']['learnset']['SUPER_FANG'] = 1
+
 
 # Spearow
 poke_dict['Spearow']['evolution'] = {}
 poke_dict['Spearow']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Spearow']['learnset']['Peck'] = 1
+poke_dict['Spearow']['learnset']['PECK'] = 1
+poke_dict['Spearow']['learnset']['GROWL'] = 1
+poke_dict['Spearow']['learnset']['LEER'] = 1
+poke_dict['Spearow']['learnset']['FURY_ATTACK'] = 1
+poke_dict['Spearow']['learnset']['PURSUIT'] = 1
+poke_dict['Spearow']['learnset']['MIRROR_MOVE'] = 1
+poke_dict['Spearow']['learnset']['DRILL_PECK'] = 1
+poke_dict['Spearow']['learnset']['AGILITY'] = 1
 
 # Fearow
-poke_dict['Fearow']['learnset']['Peck'] = 1
+poke_dict['Fearow']['learnset']['PECK'] = 1
+poke_dict['Fearow']['learnset']['GROWL'] = 1
+poke_dict['Fearow']['learnset']['LEER'] = 1
+poke_dict['Fearow']['learnset']['FURY_ATTACK'] = 1
+poke_dict['Fearow']['learnset']['PURSUIT'] = 1
+poke_dict['Fearow']['learnset']['MIRROR_MOVE'] = 1
+poke_dict['Fearow']['learnset']['DRILL_PECK'] = 1
+poke_dict['Fearow']['learnset']['AGILITY'] = 1
 
 # Ekans
 poke_dict['Ekans']['evolution'] = {}
 poke_dict['Ekans']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Ekans']['learnset']['Wrap'] = 1
+poke_dict['Ekans']['learnset']['WRAP'] = 1
+poke_dict['Ekans']['learnset']['LEER'] = 1
+poke_dict['Ekans']['learnset']['POISON_STING'] = 1
+poke_dict['Ekans']['learnset']['BITE'] = 1
+poke_dict['Ekans']['learnset']['GLARE'] = 1
+poke_dict['Ekans']['learnset']['SCREECH'] = 1
+poke_dict['Ekans']['learnset']['ACID'] = 1
+poke_dict['Ekans']['learnset']['HAZE'] = 1
 
 # Arbok
-poke_dict['Arbok']['learnset']['Wrap'] = 1
+poke_dict['Arbok']['learnset']['WRAP'] = 1
+poke_dict['Arbok']['learnset']['LEER'] = 1
+poke_dict['Arbok']['learnset']['POISON_STING'] = 1
+poke_dict['Arbok']['learnset']['BITE'] = 1
+poke_dict['Arbok']['learnset']['GLARE'] = 1
+poke_dict['Arbok']['learnset']['SCREECH'] = 1
+poke_dict['Arbok']['learnset']['ACID'] = 1
+poke_dict['Arbok']['learnset']['HAZE'] = 1
 
 # Pikachu
 poke_dict['Pikachu']['evolution'] = {}
 poke_dict['Pikachu']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Pikachu']['evolution']['EVOLVE_ITEM']['THUNDERSTONE'] = "RAICHU"
-poke_dict['Pikachu']['learnset']['Tackle'] = 1
+poke_dict['Pikachu']['learnset']['THUNDERSHOCK'] = 1
+poke_dict['Pikachu']['learnset']['GROWL'] = 1
+poke_dict['Pikachu']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Pikachu']['learnset']['THUNDER_WAVE'] = 1
+poke_dict['Pikachu']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Pikachu']['learnset']['DOUBLE_TEAM'] = 1
+poke_dict['Pikachu']['learnset']['SLAM'] = 1
+poke_dict['Pikachu']['learnset']['THUNDERBOLT'] = 1
+poke_dict['Pikachu']['learnset']['AGILITY'] = 1
+poke_dict['Pikachu']['learnset']['THUNDER'] = 1
+poke_dict['Pikachu']['learnset']['LIGHT_SCREEN'] = 1
 
 # Raichu
-poke_dict['Raichu']['learnset']['Tackle'] = 1
+poke_dict['Raichu']['learnset']['THUNDERSHOCK'] = 1
+poke_dict['Raichu']['learnset']['GROWL'] = 1
+poke_dict['Raichu']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Raichu']['learnset']['THUNDER_WAVE'] = 1
+poke_dict['Raichu']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Raichu']['learnset']['DOUBLE_TEAM'] = 1
+poke_dict['Raichu']['learnset']['SLAM'] = 1
+poke_dict['Raichu']['learnset']['THUNDERBOLT'] = 1
+poke_dict['Raichu']['learnset']['AGILITY'] = 1
+poke_dict['Raichu']['learnset']['THUNDER'] = 1
+poke_dict['Raichu']['learnset']['LIGHT_SCREEN'] = 1
 
 # Sandshrew
 poke_dict['Sandshrew']['evolution'] = {}
 poke_dict['Sandshrew']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Sandshrew']['learnset']['Scratch'] = 1
+poke_dict['Sandshrew']['learnset']['SCRATCH'] = 1
+poke_dict['Sandshrew']['learnset']['DEFENSE_CURL'] = 1
+poke_dict['Sandshrew']['learnset']['SAND_ATTACK'] = 1
+poke_dict['Sandshrew']['learnset']['POISON_STING'] = 1
+poke_dict['Sandshrew']['learnset']['SLASH'] = 1
+poke_dict['Sandshrew']['learnset']['SWIFT'] = 1
+poke_dict['Sandshrew']['learnset']['FURY_SWIPES'] = 1
+poke_dict['Sandshrew']['learnset']['SANDSTORM'] = 1
 
 # Sandslash
-poke_dict['Sandslash']['learnset']['Scratch'] = 1
+poke_dict['Sandslash']['learnset']['SCRATCH'] = 1
+poke_dict['Sandslash']['learnset']['DEFENSE_CURL'] = 1
+poke_dict['Sandslash']['learnset']['SAND_ATTACK'] = 1
+poke_dict['Sandslash']['learnset']['POISON_STING'] = 1
+poke_dict['Sandslash']['learnset']['SLASH'] = 1
+poke_dict['Sandslash']['learnset']['SWIFT'] = 1
+poke_dict['Sandslash']['learnset']['FURY_SWIPES'] = 1
+poke_dict['Sandslash']['learnset']['SANDSTORM'] = 1
 
 # NOTE UNIQUE CODES FOR NIDORAN!!
 
 # Nidoran♀
 poke_dict['Nidoran\u00e2\u2122\u201a']['evolution'] = {}
 poke_dict['Nidoran\u00e2\u2122\u201a']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['Tackle'] = 1
-poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['Poison Sting'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['TACKLE'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['GROWL'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['POISON_STING'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['BITE'] = 1
+poke_dict['Nidoran\u00e2\u2122\u201a']['learnset']['FURY_SWIPES'] = 1
 
 # Nidorina
 poke_dict['Nidorina']['evolution'] = {}
 poke_dict['Nidorina']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Nidorina']['evolution']['EVOLVE_ITEM']['MOON_STONE'] = "Nidoqueen"
-poke_dict['Nidorina']['learnset']['Tackle'] = 1
-poke_dict['Nidorina']['learnset']['Poison Sting'] = 1
+poke_dict['Nidorina']['learnset']['TACKLE'] = 1
+poke_dict['Nidorina']['learnset']['GROWL'] = 1
+poke_dict['Nidorina']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidorina']['learnset']['POISON_STING'] = 1
+poke_dict['Nidorina']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Nidorina']['learnset']['BITE'] = 1
+poke_dict['Nidorina']['learnset']['FURY_SWIPES'] = 1
 
 # Nidoqueen
-poke_dict['Nidoqueen']['learnset']['Tackle'] = 1
-poke_dict['Nidoqueen']['learnset']['Poison Sting'] = 1
+poke_dict['Nidoqueen']['learnset']['TACKLE'] = 1
+poke_dict['Nidoqueen']['learnset']['POISON_STING'] = 1
+poke_dict['Nidoqueen']['learnset']['GROWL'] = 1
+poke_dict['Nidoqueen']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidoqueen']['learnset']['BITE'] = 1
+poke_dict['Nidoqueen']['learnset']['FURY_SWIPES'] = 1
+poke_dict['Nidoqueen']['learnset']['BODY_SLAM'] = 1
 
 # Nidoran♂
 poke_dict['Nidoran\u00e2\u2122\u20ac']['evolution'] = {}
 poke_dict['Nidoran\u00e2\u2122\u20ac']['evolution']['EVOLVE_LEVEL'] = {}
-poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['Tackle'] = 1
-poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['Poison Sting'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['TACKLE'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['HORN_ATTACK'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['POISON_STING'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['FURY_ATTACK'] = 1
+poke_dict['Nidoran\u00e2\u2122\u20ac']['learnset']['HORN_DRILL'] = 1
 
 # Nidorino
 poke_dict['Nidorino']['evolution'] = {}
 poke_dict['Nidorino']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Nidorino']['evolution']['EVOLVE_ITEM']['MOON_STONE'] = "Nidoking"
-poke_dict['Nidorino']['learnset']['Tackle'] = 1
-poke_dict['Nidorino']['learnset']['Poison Sting'] = 1
+poke_dict['Nidorino']['learnset']['TACKLE'] = 1
+poke_dict['Nidorino']['learnset']['POISON_STING'] = 1
+poke_dict['Nidorino']['learnset']['HORN_ATTACK'] = 1
+poke_dict['Nidorino']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidorino']['learnset']['POISON_STING'] = 1
+poke_dict['Nidorino']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Nidorino']['learnset']['FURY_ATTACK'] = 1
+poke_dict['Nidorino']['learnset']['HORN_DRILL'] = 1
 
 # Nidoking
-poke_dict['Nidoking']['learnset']['Tackle'] = 1
-poke_dict['Nidoking']['learnset']['Poison Sting'] = 1
+poke_dict['Nidoking']['learnset']['TACKLE'] = 1
+poke_dict['Nidoking']['learnset']['POISON_STING'] = 1
+poke_dict['Nidoking']['learnset']['HORN_ATTACK'] = 1
+poke_dict['Nidoking']['learnset']['DOUBLE_KICK'] = 1
+poke_dict['Nidoking']['learnset']['POISON_STING'] = 1
+poke_dict['Nidoking']['learnset']['FOCUS_ENERGY'] = 1
+poke_dict['Nidoking']['learnset']['FURY_ATTACK'] = 1
+poke_dict['Nidoking']['learnset']['THRASH'] = 1
+poke_dict['Nidoking']['learnset']['HORN_DRILL'] = 1
 
 # Clefairy
 poke_dict['Clefairy']['evolution'] = {}
 poke_dict['Clefairy']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Clefairy']['evolution']['EVOLVE_ITEM']['MOON_STONE'] = "Clefable"
-poke_dict['Clefairy']['learnset']['Tackle'] = 1
+poke_dict['Clefairy']['learnset']['POUND'] = 1
+poke_dict['Clefairy']['learnset']['GROWL'] = 1
+poke_dict['Clefairy']['learnset']['ENCORE'] = 1
+poke_dict['Clefairy']['learnset']['SING'] = 1
+poke_dict['Clefairy']['learnset']['DOUBLESLAP'] = 1
+poke_dict['Clefairy']['learnset']['MINIMIZE'] = 1
+poke_dict['Clefairy']['learnset']['DEFENSE_CURL'] = 1
+poke_dict['Clefairy']['learnset']['METRONOME'] = 1
+poke_dict['Clefairy']['learnset']['MOONLIGHT'] = 1
+poke_dict['Clefairy']['learnset']['LIGHT_SCREEN'] = 1
 
 # Clefable
-poke_dict['Clefable']['learnset']['Tackle'] = 1
+poke_dict['Clefable']['learnset']['POUND'] = 1
+poke_dict['Clefable']['learnset']['GROWL'] = 1
+poke_dict['Clefable']['learnset']['ENCORE'] = 1
+poke_dict['Clefable']['learnset']['SING'] = 1
+poke_dict['Clefable']['learnset']['DOUBLESLAP'] = 1
+poke_dict['Clefable']['learnset']['MINIMIZE'] = 1
+poke_dict['Clefable']['learnset']['DEFENSE_CURL'] = 1
+poke_dict['Clefable']['learnset']['METRONOME'] = 1
+poke_dict['Clefable']['learnset']['MOONLIGHT'] = 1
+poke_dict['Clefable']['learnset']['LIGHT_SCREEN'] = 1
 
 # Vulpix
 poke_dict['Vulpix']['evolution'] = {}
 poke_dict['Vulpix']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Vulpix']['evolution']['EVOLVE_ITEM']['FIRE_STONE'] = "Ninetails"
-poke_dict['Vulpix']['learnset']['Scratch'] = 1
+poke_dict['Vulpix']['learnset']['EMBER'] = 1
+poke_dict['Vulpix']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Vulpix']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Vulpix']['learnset']['ROAR'] = 1
+poke_dict['Vulpix']['learnset']['CONFUSE_RAY'] = 1
+poke_dict['Vulpix']['learnset']['SAFEGUARD'] = 1
+poke_dict['Vulpix']['learnset']['FLAMETHROWER'] = 1
+poke_dict['Vulpix']['learnset']['FIRE_SPIN'] = 1
 
 # Ninetales
-poke_dict['Ninetales']['learnset']['Scratch'] = 1
+poke_dict['Ninetales']['learnset']['EMBER'] = 1
+poke_dict['Ninetales']['learnset']['TAIL_WHIP'] = 1
+poke_dict['Ninetales']['learnset']['QUICK_ATTACK'] = 1
+poke_dict['Ninetales']['learnset']['ROAR'] = 1
+poke_dict['Ninetales']['learnset']['CONFUSE_RAY'] = 1
+poke_dict['Ninetales']['learnset']['SAFEGUARD'] = 1
+poke_dict['Ninetales']['learnset']['FLAMETHROWER'] = 1
+poke_dict['Ninetales']['learnset']['FIRE_SPIN'] = 1
 
 # Jigglypuff
 poke_dict['Jigglypuff']['evolution'] = {}
 poke_dict['Jigglypuff']['evolution']['EVOLVE_ITEM'] = {}
 poke_dict['Jigglypuff']['evolution']['EVOLVE_ITEM']['MOON_STONE'] = "Wigglytuff"
-poke_dict['Jigglypuff']['learnset']['Pound'] = 1
+poke_dict['Jigglypuff']['learnset']['POUND'] = 1
 
 # Wigglytuff
-poke_dict['Wigglytuff']['learnset']['Pound'] = 1
+poke_dict['Wigglytuff']['learnset']['POUND'] = 1
 
 # Zubat
 poke_dict['Zubat']['evolution'] = {}
