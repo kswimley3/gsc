@@ -4,9 +4,18 @@ import pygame
 
 print(pygame.font.get_fonts())
 
+
+
 # screen
-SCREEN_WIDTH = 320
-SCREEN_HEIGHT = 288
+# game boy color screen is 160 pix wide and 144 pix tall
+SCREEN_MULT = 4
+SCREEN_WIDTH = 160 * SCREEN_MULT
+SCREEN_HEIGHT = 144 * SCREEN_MULT
+
+# battle screen
+BATTLE_SCREEN_WIDTH = SCREEN_WIDTH - (2 * SCREEN_MULT)
+BATTLE_SCREEN_HEIGHT = SCREEN_HEIGHT - (36 * SCREEN_MULT)
+
 
 # colors
 BLUE  = (0, 0, 255)

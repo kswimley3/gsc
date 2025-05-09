@@ -10,68 +10,164 @@ from classes import Pokemon
 # FUNCTIONS
 def load_sprite_paths():
 
-  # create sprite path
-  sprite_path = Path('.') / 'sprites' / 'sprites' / 'pokemon' / 'versions' / 'generation-ii' / 'silver' 
+    # create sprite path
+    sprite_path = Path('.') / 'sprites' / 'sprites' / 'pokemon' / 'versions' / 'generation-ii' / 'silver'
 
-  # create a sorted list of sprite files
-  # indexed from 0 = bulbasaur to 250 = celebi, # only unknown a available
-  sprite_list = []
-  for num in range(1,252):
-    temp_name = str(num) + ".png"
-    sprite_list.append(sprite_path / temp_name)
+    # create a sorted list of sprite files
+    # indexed from 0 = bulbasaur to 250 = celebi, # only unknown a available
+    sprite_list = []
+    for num in range(1,252):
+      temp_name = str(num) + ".png"
+      sprite_list.append(sprite_path / temp_name)
 
-  return sprite_list
+    return sprite_list
+
+def load_back_sprite_paths():
+
+    # create sprite path
+    sprite_path = Path('.') / 'sprites' / 'sprites' / 'pokemon' / 'versions' / 'generation-ii' / 'silver' / 'back'
+
+    # create a sorted list of sprite files
+    # indexed from 0 = bulbasaur to 250 = celebi, # only unknown a available
+    sprite_list = []
+    for num in range(1, 252):
+      temp_name = str(num) + ".png"
+      sprite_list.append(sprite_path / temp_name)
+
+    return sprite_list
+
+
+def get_pokemon_stats(poke_id, poke_pd):
+    # get stats from pokemon data
+    HP = poke_pd["HP"][poke_id]
+    ATK = poke_pd["Attack"][poke_id]
+    DEF = poke_pd["Defense"][poke_id]
+    SPATK = poke_pd["Sp. Atk"][poke_id]
+    SPDEF = poke_pd["Sp. Def"][poke_id]
+    SPD = poke_pd["Sp. Def"][poke_id]
+    return (HP, ATK, DEF, SPATK, SPDEF, SPD)
+
 
 def main():
-  # Main set of operations to run the game
+    # Main set of operations to run the game
 
-  # Load stats
-  poke = pd.read_csv("pokemon_gen2.csv")
+    # Load stats
+    poke = pd.read_csv("pokemon_gen2.csv")
 
-  # Load sprite paths
-  sprite_list = load_sprite_paths()
+    # Load sprite paths
+    sprite_list = load_sprite_paths()
+    backsprite_list = load_back_sprite_paths()
 
-  # Merge sprite paths into df
-  poke["sprite_path"] = sprite_list
+    # Merge sprite paths into df
+    poke["sprite_path"] = sprite_list
 
-  # load move list
-  moves = pd.read_csv("./data/moves.csv")
+    # load move list
+    # moves = pd.read_csv("./data/moves.csv")
 
-  #PYGAME INITIALIZATION
-  pygame.init()
-  pygame.font.init()
-  my_font = pygame.font.SysFont("consolas" , 16)
+    #PYGAME INITIALIZATION
+    pygame.init()
+    pygame.font.init()
+
+    # define font and size
+    my_font = pygame.font.SysFont("consolas", 8 * settings.SCREEN_MULT)
+    font_moves = pygame.font.SysFont("consolas", 8 * settings.SCREEN_MULT)
   
-  DISPLAYSURF = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
-  DISPLAYSURF.fill(settings.WHITE)
-  pygame.display.set_caption("Pokemon Fiscal")
-
-  P1 = Pokemon(sprite_path = sprite_list[0], name = "Bulbasaur")
-
-  # run the game
-  while True:
-    for event in pygame.event.get():
-      if event.type == QUIT:
-        pygame.quit()
-        sys.exit()
-
-    P1.update()
-
+    DISPLAYSURF = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
     DISPLAYSURF.fill(settings.WHITE)
-    P1.draw(DISPLAYSURF)
-    text_surface = my_font.render(P1.name, False, settings.BLACK)
-    DISPLAYSURF.blit(text_surface, (10, 10))
+    pygame.display.set_caption("Pokemon Fiscal")
 
-  
-    # update the game state
-    pygame.display.update()
-    settings.FramePerSec.tick(settings.FPS)
+    P1 = Pokemon(sprite_path=sprite_list[2], name="Venusaur",
+                 level=50, stats=get_pokemon_stats(2, poke_pd=poke)
+                 )
+    P2 = Pokemon(sprite_path=backsprite_list[5], name="Charizard",
+                 level=50, enemy=False, stats=get_pokemon_stats(5, poke_pd=poke),
+                 moves=("Ember", "Growl", "Wing Attack", "Dragon Breath")
+                 )
+
+    # run the game
+    while True:
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+                sys.exit()
+
+        P1.update()
+        P2.update()
+
+        DISPLAYSURF.fill(settings.WHITE)
+        P1.draw(DISPLAYSURF)
+        P2.draw(DISPLAYSURF)
+
+        # Draw the enemy information
+        text_enemy_name = my_font.render(P1.name, False, settings.BLACK)
+        DISPLAYSURF.blit(text_enemy_name, (5*settings.SCREEN_MULT, 5*settings.SCREEN_MULT))
+
+        text_enemy_hp = my_font.render("HP: " + str(P1.health), False, settings.BLACK)
+        DISPLAYSURF.blit(text_enemy_hp, (50*settings.SCREEN_MULT, 5*settings.SCREEN_MULT))
+
+        # Draw ally information
+        text_ally_name = my_font.render(P2.name, False, settings.BLACK)
+        DISPLAYSURF.blit(text_ally_name,
+                         (settings.BATTLE_SCREEN_WIDTH - settings.SCREEN_MULT * 82,
+                          settings.BATTLE_SCREEN_HEIGHT - settings.SCREEN_MULT * 6)
+                         )
+
+        text_ally_hp = my_font.render("HP: " + str(P2.health), False, settings.BLACK)
+        DISPLAYSURF.blit(text_ally_hp,
+                         (settings.BATTLE_SCREEN_WIDTH - settings.SCREEN_MULT * 32,
+                          settings.BATTLE_SCREEN_HEIGHT - settings.SCREEN_MULT * 6)
+                         )
+
+        # Create the Moves screen
+        pygame.draw.rect(
+            DISPLAYSURF,
+            settings.BLACK,
+            (0,                                                         # left
+                settings.BATTLE_SCREEN_HEIGHT+1*settings.SCREEN_MULT,   # top
+                settings.BATTLE_SCREEN_WIDTH,                           # width
+                settings.SCREEN_HEIGHT - settings.BATTLE_SCREEN_HEIGHT  # height
+             ),
+            2 * settings.SCREEN_MULT  # width
+        )
+
+        text_move1 = font_moves.render(P2.move_1, False, settings.BLACK)
+        text_move2 = font_moves.render(P2.move_2, False, settings.BLACK)
+        text_move3 = font_moves.render(P2.move_3, False, settings.BLACK)
+        text_move4 = font_moves.render(P2.move_4, False, settings.BLACK)
+
+        DISPLAYSURF.blit(text_move1,
+                         (settings.SCREEN_MULT * 8,
+                          settings.SCREEN_HEIGHT - settings.SCREEN_MULT * 30)
+                         )
+
+        DISPLAYSURF.blit(text_move2,
+                         (settings.SCREEN_WIDTH/2,
+                          settings.SCREEN_HEIGHT - settings.SCREEN_MULT * 30)
+                         )
+
+        DISPLAYSURF.blit(text_move3,
+                         (settings.SCREEN_MULT * 8,
+                          settings.SCREEN_HEIGHT - settings.SCREEN_MULT * 15)
+                         )
+
+        DISPLAYSURF.blit(text_move4,
+                         (settings.SCREEN_WIDTH/2,
+                          settings.SCREEN_HEIGHT - settings.SCREEN_MULT * 15)
+                         )
+
+
+
+
+
+        # update the game state
+        pygame.display.update()
+        settings.FramePerSec.tick(settings.FPS)
 
 
 
 # run the main file
 if __name__ == "__main__":
-  main()
+    main()
 
 
 
