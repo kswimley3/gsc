@@ -51,6 +51,12 @@ def get_pokemon_stats(poke_id, poke_pd):
 def main():
     # Main set of operations to run the game
 
+    # Define global states
+    glob_intro_battle_state = 1
+    glob_move_selection = 0
+    glob_move_ally = 0
+    glob_move_enemy= 0
+
     # Load stats
     poke = pd.read_csv("pokemon_gen2.csv")
 
@@ -64,7 +70,7 @@ def main():
     # load move list
     # moves = pd.read_csv("./data/moves.csv")
 
-    #PYGAME INITIALIZATION
+    # PYGAME INITIALIZATION
     pygame.init()
     pygame.font.init()
 
@@ -83,6 +89,16 @@ def main():
                  level=50, enemy=False, stats=get_pokemon_stats(5, poke_pd=poke),
                  moves=("Ember", "Growl", "Wing Attack", "Dragon Breath")
                  )
+
+    # establish the move indicator sprite
+    MOVE_INDICATOR = pygame.image.load(Path('.') / 'sprites' / 'gsc_custom' / 'Menu_Indicator.png').convert()
+    MOVE_INDICATOR_SIZE = MOVE_INDICATOR.get_size()
+    MOVE_INDICATOR = pygame.transform.scale(
+        MOVE_INDICATOR, (int(MOVE_INDICATOR_SIZE[0] * settings.SCREEN_MULT), int(MOVE_INDICATOR_SIZE[1] * settings.SCREEN_MULT))
+    )
+    MOVE_INDICATOR_rect = MOVE_INDICATOR.get_rect()
+    MOVE_INDICATOR_rect.left = 0
+    MOVE_INDICATOR_rect.bottom = 544
 
     # run the game
     while True:
@@ -154,6 +170,13 @@ def main():
                          (settings.SCREEN_WIDTH/2,
                           settings.SCREEN_HEIGHT - settings.SCREEN_MULT * 15)
                          )
+
+        if P2.in_position == True:
+            glob_intro_battle_state = 0
+            glob_move_selection = 1
+
+        if glob_move_selection == True:
+            DISPLAYSURF.blit(MOVE_INDICATOR, MOVE_INDICATOR_rect)
 
 
 

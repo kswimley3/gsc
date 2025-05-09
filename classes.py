@@ -35,11 +35,17 @@ class Pokemon(pygame.sprite.Sprite):
         self.move_3 = moves[2]
         self.move_4 = moves[3]
 
+        # checks to see if the enemy is in position
+        if self.enemy: self.in_position = False
+        else: self.in_position = True
+
       def update(self):
         # Update all information related to self
         if self.enemy:
           if self.rect.right < settings.BATTLE_SCREEN_WIDTH - settings.SCREEN_MULT:
             self.rect.move_ip(5, 0)
+            if self.rect.right >= settings.BATTLE_SCREEN_WIDTH - settings.SCREEN_MULT:
+                self.in_position = True
 
       def draw(self, surface):
           surface.blit(self.image, self.rect)
