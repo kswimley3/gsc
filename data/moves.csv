@@ -1,0 +1,42 @@
+name,type,power,acc,pp,extra,notes
+Tackle,Normal,45,100,30,,
+Scratch,Normal,35,100,30,slash,20% flinch chance
+Wrap,Normal,20,90,20,,wrap dmg for 4 turns
+Pound,Normal,50,95,20,punch,
+Take Down,Normal,80,90,20,,recoil dmg
+Transform,Normal,,,20,,copies opponent
+Sketch,Normal,,,,,permanently copies move
+Absorb,Grass,40,95,30,,half hp absorb
+Vine Whip,Grass,60,100,20,,
+Bubble,Water,30,95,30,,spd down
+Water Gun,Water,50,100,20,,
+Ember,Fire,40,95,30,,burn chance
+Flame Wheel,Fire,50,100,20,,burn chance
+Thunder Shock,Electric,40,95,30,,20% prz chance
+Shock Wave,Electric,60,100,20,,guaranteed hit
+Rock Throw,Rock,40,90,30,,30% flinch chance
+Rock Tomb,Rock,60,95,20,,spd down
+Magnitude,Ground,40,100,30,,no effect
+Bulldoze,Ground,60,100,20,,spd down
+Icy Wind,Ice,40,95,30,,spd down
+Aurora Beam,Ice,60,100,20,,20% atk down
+Leech Life,Bug,35,95,30,,half hp absorb
+Fury Cutter,Bug,50,90,20,,1.5x dmg for each success
+Bite,Dark,40,95,30,,20% flinch chance
+Crunch,Dark,50,100,20,,20% chance def down
+Twister,Dragon,40,100,30,,no effect
+Dragonbreath,Dragon,60,100,20,,10% prz chance
+Karate Chop,Fighting,40,95,30,,crit chance
+Submission,Fighting,70,100,20,,recoil dmg
+Counter,Fighting,,,20,,"goes last, 2x dmg back if hit by physical move"
+Peck,Flying,40,95,30,,crit chance
+Aerial Ace,Flying,60,100,20,,guaranteed hit
+Lick,Ghost,40,95,30,,10% prz chance
+Shadow Ball,Ghost,60,100,20,,20% chance spdef down
+Poison Sting,Poison,35,95,30,,30% psn chance
+Sludge,Poison,50,100,20,,30% psn chance
+Confusion,Psychic,40,95,30,,cnfs chance
+Teleport,Psychic,,,20,,switch with party member
+Psybeam,Psychic,60,100,20,,
+Metal Claw,Steel,35,100,30,,atk up chance
+Steel Wing,Steel,65,90,20,,10% def up chance
